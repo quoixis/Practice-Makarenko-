@@ -67,5 +67,60 @@
                 </tr>
             </tbody>
         </table>
+        <a href="#head_id">Нагору</a>
+
+        <h2>Форма опитування</h2>
+        <form>
+    <fieldset>
+        <h2>Оцінка веб-сайту</h2>
+
+        <p><label for="name"><b>Ваше ім'я:</b></label></p>
+        <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required>
+
+        <br><br>
+
+        <p><label for="email"><b>Ваш email:</b></label></p>
+        <input type="email" id="email" name="email" placeholder="Введіть вашу електронну пошту" required>
+
+        <br><br>
+
+        <p><b>Як ви дізналися про наш веб-сайт?</b></p>
+        <input type="radio" id="internet" name="source" value="Інтернет" required>
+        <label for="internet">Пошук в Інтернеті</label>
+        <input type="radio" id="friend" name="source" value="Від друга">
+        <label for="friend">Від друга</label>
+        <input type="radio" id="advertisement" name="source" value="Реклама">
+        <label for="advertisement">Реклама</label>
+
+        <br><br>
+
+        <p><b>Які розділи сайту вам найбільше сподобалися? (оберіть кілька)</b></p>
+        <input type="checkbox" id="design" name="like[]" value="Дизайн">
+        <label for="design">Дизайн</label>
+        <input type="checkbox" id="content" name="like[]" value="Контент">
+        <label for="content">Контент</label>
+        <input type="checkbox" id="usability" name="like[]" value="Зручність використання">
+        <label for="usability">Зручність використання</label>
+
+        <br><br>
+
+        <p><label for="rating"><b>Оцініть наш сайт:</b></label></p>
+        <select id="rating" name="rating">
+            <option value="Відмінно">Відмінно</option>
+            <option value="Добре">Добре</option>
+            <option value="Задовільно">Задовільно</option>
+            <option value="Погано">Погано</option>
+        </select>
+
+        <br><br>
+
+        <p><label for="comments"><b>Додаткові коментарі:</b></label><br></p>
+        <textarea cols="50" rows="3" placeholder="Ваші враження або пропозиції"></textarea>
+
+        <br><br>
+
+        <input type="submit" value="Надіслати" class="submit-btn">
+    </fieldset>
+        </form>
 </body>
 </html>
